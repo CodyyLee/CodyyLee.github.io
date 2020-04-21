@@ -1,0 +1,224 @@
+.pr-container {
+    background-color: black;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .pr-content {
+        width: 90%;
+        height: 90%;
+        border: 1px solid #00ffff;
+        border-radius: 5px;
+        animation: scaleIn 1s forwards;
+        opacity: 0;
+        overflow: hidden;
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                width: 1px;
+            }
+
+            to {
+                opacity: 1;
+                width: 80%;
+            }
+        }
+
+        .title {
+            height: 10%;
+            width: 90%;
+            border-bottom: 1px solid #00ffff;
+            border-right: 1px solid #00ffff;
+            transform: skew(-20deg);
+            display: flex;
+            align-items: center;
+            margin-left: 3%;
+            justify-content: space-between;
+            animation: fadeInTitle 4s forwards;
+            opacity: 0;
+
+            @keyframes fadeInTitle {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+           .line-container {
+               display: flex;
+               height: 100%;
+
+            .line {
+                border-left: 1px solid #00ffff;
+                margin-right: 1rem;
+                height: 100%;
+            }
+           }
+
+            h1{
+                color: white;
+                font-size: 3rem;
+                margin: 0 0 0 5rem;
+                transform: skew(20deg);
+            }
+        }
+
+        .pr-title {
+            color: #00ffff;
+            text-align: center;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            img {
+                max-height: 80%;
+
+                @keyframes slideNext {
+                    from {
+                        min-width: 90%;
+                    }
+
+                    to {
+                        min-width: 1px;
+                        max-width: 1px;
+                    }
+                }
+
+                @keyframes slideNext2 {
+                    from {
+                        min-width: 1px;
+                        max-width: 1px;
+                    }
+
+                    to {
+                        min-width: 90%;
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+
+        .pr-about {
+            width: 95%;
+            height: 80%;
+            margin: 5% 2.5%;
+            animation: fadeInTitle 4s forwards;
+            opacity: 0;
+
+            @keyframes fadeInTitle {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .pr-title {
+                height: 90%;
+
+                img {
+                    min-width: 90%;
+                    min-height: 80%;
+                    border: 1px solid #00ffff;
+                    border-radius: 5px;
+
+                    &:hover {
+                        border: 2px solid #00ffff;
+                    }
+                }
+            }
+
+            .buttons {
+                height: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                button {
+                    width: 40%;
+                    background-color: black;
+                    border-radius: 5px;
+                    border: 1px solid #00ffff;
+                    color: #00ffff;
+                    height: 80%;
+                }
+
+                button:disabled {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .pr-container {
+        .pr-content {
+            max-width: 65%;
+            max-height: 70%;
+        }
+
+        .buttons {
+            
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .pr-container {
+        height: 100%;
+        width: 100%;
+
+        .pr-content {
+            max-width: 65%;
+            max-height: 70%;
+
+            .title {
+                margin-left: 0;
+            }
+
+            .pr-about {
+                display: flex;
+                flex-wrap: wrap;
+
+                .pr-title {
+                    width: 45%;
+                    margin: 0;
+                }
+
+                .pr-desc {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 40%;
+                    margin-left: 5%;
+                    text-align: justify;
+                }
+            }
+        }
+
+        .buttons {
+            width: 50%;
+            margin: 0 auto;
+            
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

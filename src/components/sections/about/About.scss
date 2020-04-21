@@ -1,0 +1,332 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 90vh;
+    max-height: 90vh;
+    background-color: black;
+
+    .content-container {
+        display: flex;
+        width: 80%;
+        height: 80vh;
+        flex-direction: column;
+        border: 1px solid #00ffff;
+        border-radius: 5px;
+        width: 1px;
+        opacity: 0;
+        margin-left: 10%;
+        animation: scaleIn 1s forwards;
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                width: 1px;
+            }
+
+            to {
+                opacity: 1;
+                width: 80%;
+            }
+        }
+
+        .content {
+            height: 100%;
+
+            .title {
+                opacity: 0;
+                height: 10%;
+                width: 90%;
+                border-bottom: 1px solid #00ffff;
+                border-right: 1px solid #00ffff;
+                transform: skew(-20deg);
+                display: flex;
+                align-items: center;
+                margin-left: 3%;
+                justify-content: space-between;
+                animation: fadeInTitle 4s forwards;
+
+                @keyframes fadeInTitle {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+               .line-container {
+                   display: flex;
+                   height: 100%;
+
+                .line {
+                    border-left: 1px solid #00ffff;
+                    margin-right: 1rem;
+                    height: 100%;
+                }
+               }
+
+                h1{
+                    color: white;
+                    font-size: 3rem;
+                    margin: 0 0 0 5rem;
+                    transform: skew(20deg);
+                    
+                }
+            }
+
+            .content-desc {
+                display: flex;
+                opacity: 0;
+                animation: fadeInContent 1.5s forwards;
+                width: 100%;
+                max-height: 90%;
+                flex-direction: column;
+                
+                @keyframes fadeInContent {
+                    0% {opacity: 0}
+
+                    50% {opacity: 0}
+
+                    100% {opacity: 1}
+                }
+
+                .photo {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 50%;
+                    margin-left: 2%;
+                    margin-right: 0;
+                    
+                    .photo-container {
+                        padding: 5px;
+                        width: 50%;
+
+                        .about-img {
+                            max-height: 99%;
+                            max-width: 100%;
+                            border-radius: 5px;
+                        }
+    
+                        h3 {
+                            color: white;
+                            font-size: 2.5rem;
+                            font-weight: 200;
+                            margin: 0;
+                        }
+                    }
+
+                    .stats {
+                        width: 50%;
+                        margin-top: -10%;
+
+                        p {
+                            color: white;
+                            font-size: 1.2rem;
+
+                            span {
+                                color: #00ffff;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    width: 100%;
+                    max-height: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .text-container {
+                        width: 80%;
+                        padding: 4%;
+                        background-color: rgb(12, 12, 12);
+                        border-radius: 5px;
+                        max-height: 35vh;
+                        overflow-y: scroll;
+
+                        p {
+                            color: white;
+                            font-size: 1.8rem;
+                            margin: 0;
+                            text-justify: inter-word;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .about-container {
+    
+        .content-container {
+    
+            .content {
+    
+                .title {
+                    width: 85%;
+                    animation: fadeInTitle 2s forwards;
+                }
+    
+                .content-desc {
+    
+                    .photo {
+                        margin: 2%;
+                        
+                        .photo-container {
+    
+                            .about-img {
+                            }
+        
+                            h3 {
+                                text-align: center;
+                            }
+                        }
+    
+                        .stats {
+                            width: 50%;
+                            margin-top: -10%;
+                            padding: 2%;
+    
+                            p {
+                                color: white;
+                                font-size: 2.8rem;
+    
+                                span {
+                                    color: #00ffff;
+                                    font-size: 3.2rem;
+                                }
+                            }
+                        }
+                    }
+    
+                    .text {
+                        width: 100%;
+                        max-height: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .text-container {
+                            width: 80%;
+                            padding: 4%;
+                            background-color: rgb(12, 12, 12);
+                            border-radius: 5px;
+                            max-height: 35vh;
+                            overflow-y: scroll;
+    
+                            p {
+                                color: white;
+                                font-size: 1.8rem;
+                                text-align: justify;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1365px) {
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        max-height: 100vh;
+        background-color: black;
+    
+        .content-container {
+            margin-left: 14%;
+    
+            @keyframes scaleIn {
+                from {
+                    opacity: 0;
+                    width: 1px;
+                }
+    
+                to {
+                    opacity: 1;
+                    width: 70%;
+                }
+            }
+    
+            .content {
+    
+                .title {
+                    width: 70%;
+                    margin-left: 1.2%;
+                }
+    
+                .content-desc {
+                    flex-direction: row;
+                    height: 100%;
+    
+                    .photo {
+                        flex-direction: column;
+                        width: 40%;
+                        height: 100%;
+                        margin: 0;
+                        justify-content: flex-start;
+                        padding: 5px;
+                        
+                        .photo-container {
+                            padding: 5px;
+                            width: 100%;
+                            height: 50%;
+        
+                            h3 {
+                                font-size: 3rem;
+                            }
+                        }
+    
+                        .stats {
+                            width: 100%;
+                            margin-top: 3%;
+                            padding-left: 10%;
+    
+                            p {
+                                color: white;
+                                font-size: 1.8rem;
+    
+                                span {
+                                    color: #00ffff;
+                                    font-size: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+    
+                    .text {
+                        max-height: 90%;
+                        margin-top: 2.5%;
+    
+                        .text-container {
+                            height: 100%;
+                            min-height: 80%;
+                            overflow-y: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+    
+                            p {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
