@@ -48,22 +48,13 @@ export default function About() {
                             <div className="text-container">
                                 <h3>Hi, I'm Cody</h3>
                                 <br/>
-                                <p>I got my first taste of programming at the age of 14 by creating automation
-                                programs for my favorite MMORPG of that time. To be able to write code and produce something both useful for myself
-                                and for others was an incredible feeling.</p>
+                                <p>I first became interested in programming at the age of 14 when I was introduced to creating automation programs for MMORPGs. Writing code to produce something useful for myself and for others was a rewarding experience.</p>
                                 <br/>
-                                <p>Once I got a taste of what programming had to offer I was hooked. I began creating
-                                little programs to automate many tasks that I found myself repeating thorughout the day.
-                                Things like programmable autoclickers that tracked positions, color changes, and reacted differently
-                                depending on certain circumstances or programs to map application launches, events and so much more to the push of a button.
-                                The feeling was incredible.</p>
+                                <p>I began creating programs to automate many tasks that I found myself repeating throughout the day, such as, programmable mouse automation tools that allowed users to track positioning and pixel color to enable or disable certain events and programs to launch an application or a series of applications, macros or both at the press of a button. The possibilities were endless and it only furthered my desire to continue to learn.</p>
                                 <br/>
-                                <p>A couple of years later I found myself playing around with web development languages and creating small websites.
-                                It wasn't until the end of 2019, however, that I started getting serious about it as a career.</p>
+                                <p>A couple of years later I found myself delving into web development languages and creating small websites. It wasn't until the end of 2019 that I started getting serious about pursuing it as a career.</p>
                                 <br/>
-                                <p>I joined Lambda School's course for Full Stack Development and realized just how much there
-                                is to learn on both the Front End and the Back End side of things, and I can't get enough.
-                                To be able to learn whilst also creating is a dream come true.</p>
+                                <p>I enrolled into Lambda School's course for Full Stack Development and realized just how much there is to learn on both the Front End and the Back End side of things. I thoroughly enjoy creating web applications while also getting the opportunity to grow as a developer.</p>
                             </div>
                         </div>
                     </div>
