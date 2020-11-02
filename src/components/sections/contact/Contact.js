@@ -145,11 +145,11 @@ export default function Contact() {
                         
                         {output()}
 
-                        <div className="timezone">
+                        {/* <div className="timezone">
                             <h4>IT IS CURRENTLY</h4>
                             <p>{final}</p>
                             <h4>IN MY TIMEZONE</h4>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
