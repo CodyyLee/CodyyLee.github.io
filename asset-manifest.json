@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio-Site/static/css/main.b5f15fca.chunk.css",
-    "main.js": "/Portfolio-Site/static/js/main.7fe6b72d.chunk.js",
-    "main.js.map": "/Portfolio-Site/static/js/main.7fe6b72d.chunk.js.map",
-    "runtime-main.js": "/Portfolio-Site/static/js/runtime-main.a6734c80.js",
-    "runtime-main.js.map": "/Portfolio-Site/static/js/runtime-main.a6734c80.js.map",
-    "static/js/2.ad9d73ac.chunk.js": "/Portfolio-Site/static/js/2.ad9d73ac.chunk.js",
-    "static/js/2.ad9d73ac.chunk.js.map": "/Portfolio-Site/static/js/2.ad9d73ac.chunk.js.map",
-    "index.html": "/Portfolio-Site/index.html",
-    "precache-manifest.05ba50d08700239cfe47382f253171ed.js": "/Portfolio-Site/precache-manifest.05ba50d08700239cfe47382f253171ed.js",
-    "service-worker.js": "/Portfolio-Site/service-worker.js",
-    "static/css/main.b5f15fca.chunk.css.map": "/Portfolio-Site/static/css/main.b5f15fca.chunk.css.map",
-    "static/js/2.ad9d73ac.chunk.js.LICENSE.txt": "/Portfolio-Site/static/js/2.ad9d73ac.chunk.js.LICENSE.txt",
-    "static/media/profile.jpg": "/Portfolio-Site/static/media/profile.8c27444b.jpg"
+    "main.css": "/CodyyLee.github.io/static/css/main.b5f15fca.chunk.css",
+    "main.js": "/CodyyLee.github.io/static/js/main.ff56496c.chunk.js",
+    "main.js.map": "/CodyyLee.github.io/static/js/main.ff56496c.chunk.js.map",
+    "runtime-main.js": "/CodyyLee.github.io/static/js/runtime-main.253daeae.js",
+    "runtime-main.js.map": "/CodyyLee.github.io/static/js/runtime-main.253daeae.js.map",
+    "static/js/2.ad9d73ac.chunk.js": "/CodyyLee.github.io/static/js/2.ad9d73ac.chunk.js",
+    "static/js/2.ad9d73ac.chunk.js.map": "/CodyyLee.github.io/static/js/2.ad9d73ac.chunk.js.map",
+    "index.html": "/CodyyLee.github.io/index.html",
+    "precache-manifest.0dc903de4e75c2fe258f4df3439960ab.js": "/CodyyLee.github.io/precache-manifest.0dc903de4e75c2fe258f4df3439960ab.js",
+    "service-worker.js": "/CodyyLee.github.io/service-worker.js",
+    "static/css/main.b5f15fca.chunk.css.map": "/CodyyLee.github.io/static/css/main.b5f15fca.chunk.css.map",
+    "static/js/2.ad9d73ac.chunk.js.LICENSE.txt": "/CodyyLee.github.io/static/js/2.ad9d73ac.chunk.js.LICENSE.txt",
+    "static/media/profile.jpg": "/CodyyLee.github.io/static/media/profile.8c27444b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6734c80.js",
+    "static/js/runtime-main.253daeae.js",
     "static/js/2.ad9d73ac.chunk.js",
     "static/css/main.b5f15fca.chunk.css",
-    "static/js/main.7fe6b72d.chunk.js"
+    "static/js/main.ff56496c.chunk.js"
   ]
 }
