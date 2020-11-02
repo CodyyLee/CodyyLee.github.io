@@ -5,6 +5,7 @@ import Navigation from "./components/navigation/Navigation";
 import Home from "./components/sections/home/Home";
 import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
+import Contact from "./components/sections/contact/Contact";
 
 function App() {
   
@@ -24,6 +25,10 @@ function App() {
 
       <Route path="/projects" render={() => {
         return <Projects />
+      }} />
+
+      <Route path="/contact" render={() => {
+        return <Contact />
       }} />
     </div>
   );

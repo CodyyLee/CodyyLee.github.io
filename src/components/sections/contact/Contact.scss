@@ -1,0 +1,295 @@
+.container {
+
+    .content-container {
+        display: flex;
+        width: 80%;
+        height: 80vh;
+        flex-direction: column;
+        border: 1px solid #00ffff;
+        border-radius: 5px;
+        width: 1px;
+        opacity: 0;
+        animation: scaleIn 1s forwards;
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                width: 1px;
+            }
+
+            to {
+                opacity: 1;
+                width: 80%;
+            }
+        }
+
+        @media screen and (min-width: 1919px) {
+            width: 70%;
+            animation: scaleIn2 1s forwards;
+
+            @keyframes scaleIn2 {
+                from {
+                    opacity: 0;
+                    width: 1px;
+                }
+    
+                to {
+                    opacity: 1;
+                    width: 70%;
+                }
+            }
+        }
+
+        .content {
+            height: 100%;
+
+            .title {
+                opacity: 0;
+                height: 10%;
+                width: 90%;
+                border-bottom: 1px solid #00ffff;
+                border-right: 1px solid #00ffff;
+                transform: skew(-20deg);
+                display: flex;
+                align-items: center;
+                margin-left: 3%;
+                justify-content: space-between;
+                animation: fadeInTitle 4s forwards;
+
+                @media screen and (min-width: 1365px) {
+                    margin-left: 1.15%;
+                }
+
+                @media screen and (min-width: 1439px) {
+                    margin-left: 1.2%;
+                }
+
+                @media screen and (min-width: 1919px) {
+                    margin-left: 1%;
+                }
+
+                @keyframes fadeInTitle {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+               .line-container {
+                   display: flex;
+                   height: 100%;
+
+                .line {
+                    border-left: 1px solid #00ffff;
+                    margin-right: 1rem;
+                    height: 100%;
+                }
+               }
+
+                h1{
+                    color: white;
+                    font-size: 3rem;
+                    margin: 0 0 0 5rem;
+                    transform: skew(20deg);
+                    
+                    @media screen and (min-width: 767px) {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+
+            .contact-options {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 10%;
+                margin: 2%;
+
+                @media screen and (min-width: 767px) {
+                    width: 75%;
+                    margin-left: 12.5%;
+                }
+
+                @media screen and (min-width: 1919px) {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+
+                svg {
+                    color: #00ffff;
+                    font-size: 4rem;
+                    animation: fadeIn 1.5s forwards;
+
+                    @media screen and (min-width: 767px) {
+                        font-size: 5rem;
+                    }
+
+                    @media screen and (min-width: 1439px) {
+                        font-size: 6rem;
+                    }
+
+                    @media screen and (min-width: 1919px) {
+                        font-size: 8rem;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid #00ffff;
+                        cursor: pointer;
+                    }
+
+                    @keyframes fadeIn {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        30% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .selected {
+                    transform: scale(1.1);
+                    border-bottom: 2px solid #00ffff;
+                }
+            }
+
+            .contact-selected {
+                height: 77%;
+                color: #00ffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                animation: fadeIn 1.5s forwards;
+
+                @media screen and (min-width: 1919px) {
+                    height: 73%;
+                }
+                
+                * {
+                    text-align: center;
+                    margin: auto;
+                }
+                    
+
+                a {
+                    color: #fff;
+                    font-size: 3rem;
+                    text-decoration: none;
+
+                    @media screen and (min-width: 767px) {
+                        font-size: 3.5rem;
+                    }
+
+                    @media screen and (min-width: 1439px) {
+                        font-size: 4.5rem;
+                    }
+
+                    @media screen and (min-width: 1919px) {
+                        font-size: 5rem;
+                    }
+                }
+
+                .email {
+                    font-size: 2.5rem;
+
+                    @media screen and (min-width: 767px) {
+                        font-size: 3rem;
+                    }
+
+                    @media screen and (min-width: 1439px) {
+                        font-size: 4rem;
+                    }
+
+                    @media screen and (min-width: 1919px) {
+                        font-size: 5rem;
+                    }
+                }
+
+                .timezone {
+                    margin: 0;
+                    padding: 0;
+                    height: 30%;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    left: 0;
+
+                    h4 {
+                        font-size: 1.5rem;
+
+                        @media screen and (min-width: 767px) {
+                            font-size: 2rem;
+                        }
+
+                        @media screen and (min-width: 1439px) {
+                            font-size: 2.5rem;
+                        }
+
+                        @media screen and (min-width: 1919px) {
+                            font-size: 3rem;
+                        }
+                    }
+    
+                    p {
+                        font-size: 4.5rem;
+                        padding: 0;
+                        margin: 0;
+                        font-weight: bold;
+                    }
+                }
+
+                .section {
+                    width: 100%;
+                    position: absolute;
+                    height: 30vh;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    @keyframes change {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1
+                        }
+                    }
+
+                    * {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    h2 {
+                        
+                        @media screen and (min-width: 767px) {
+                            font-size: 2.5rem;
+                        }
+
+                        @media screen and (min-width: 1439px) {
+                            font-size: 3.5rem;
+                        }
+
+                        @media screen and (min-width: 1919px) {
+                            font-size: 4.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

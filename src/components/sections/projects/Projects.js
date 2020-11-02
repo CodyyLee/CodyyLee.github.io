@@ -32,13 +32,27 @@ export default function Project() {
         if(current === 0) {
             return null;
         } else {
-            let image = document.querySelector(".pr-img");
-            image.style.animation = "slideNext 1s forwards";
-            
-            setTimeout(() => {
-                image.style.animation = "slideNext2 1s forwards";
-                setCurrent(current - 1);
-            }, 600);
+            if(window.innerWidth > 1365) {
+                let cont = document.querySelector(".pr-title");
+                let cont1 = document.querySelector(".pr-desc");
+
+                cont.style.animation = "projectTransOut .5s forwards";
+                cont1.style.animation = "projectTransOut .5s forwards";
+                
+                setTimeout(() => {
+                    cont.style.animation = "projectTransIn .5s forwards";
+                    cont1.style.animation = "projectTransIn .5s forwards";
+                    setCurrent(current - 1);
+                }, 600);
+            } else {
+                let image = document.querySelector(".pr-img");
+                image.style.animation = "slideNext 1s forwards";
+                
+                setTimeout(() => {
+                    image.style.animation = "slideNext2 1s forwards";
+                    setCurrent(current - 1);
+                }, 600);
+            }
         }
     }
 
@@ -48,21 +62,37 @@ export default function Project() {
         if(current === (slide.length - 1)) {
            return null;
         } else {
-            let image = document.querySelector(".pr-img");
-            image.style.animation = "slideNext 1s forwards";
-            
-            setTimeout(() => {
-                image.style.animation = "slideNext2 1s forwards";
-                setCurrent(current + 1);
-            }, 600);
+            if(window.innerWidth > 1365) {
+                let cont = document.querySelector(".pr-title");
+                let cont1 = document.querySelector(".pr-desc");
+
+                cont.style.animation = "projectTransOut .5s forwards";
+                cont1.style.animation = "projectTransOut .5s forwards";
+                
+                setTimeout(() => {
+                    cont.style.animation = "projectTransIn .5s forwards";
+                    cont1.style.animation = "projectTransIn .5s forwards";
+                    setCurrent(current + 1);
+                }, 600);
+            } else {
+                let image = document.querySelector(".pr-img");
+                image.style.animation = "slideNext 1s forwards";
+                
+                setTimeout(() => {
+                    image.style.animation = "slideNext2 1s forwards";
+                    setCurrent(current + 1);
+                }, 600);
+            }
         }
     }
 
     const modal = e => {
-        setOpen(true);
+        if(window.innerWidth < 1365) {
+            setOpen(true);
+        } else {
+            return;
+        }
     }
-
-    console.log(width);
 
     return (
         <div className="pr-container">

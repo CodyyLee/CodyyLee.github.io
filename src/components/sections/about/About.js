@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 
 import img from "../../../images/profile.jpg";
+import { FaReact, FaHtml5, FaCss3, FaLess, FaSass, FaNode, FaJs} from 'react-icons/fa';
 
 export default function About() {
 
@@ -31,18 +32,38 @@ export default function About() {
                             </div>
 
                             <div className="stats">
-                                <p><span>SPECIALTY:</span></p>
-                                <p>FRONT END DEVELOPMENT</p>
-
-                                <p><span>FRAMEWORK USED:</span></p>
-                                <p>REACTJS</p>
+                                <p>SKILLS:</p>
+                                <div className='skills'>
+                                    <FaHtml5/>
+                                    <FaCss3/>
+                                    <FaLess/>
+                                    <FaSass/>
+                                    <FaJs/>
+                                    <FaReact/>
+                                    <FaNode/>
+                                </div>
                             </div>
                         </div>
                         <div className="text">
                             <div className="text-container">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dui non est imperdiet maximus. Curabitur erat ligula, dictum sit amet rutrum eget, bibendum id nulla. Nulla fermentum lectus nec purus suscipit tincidunt sit amet nec nisi. Nulla porta vehicula sollicitudin. Nam quis tempus libero. Duis metus ipsum, congue fringilla eleifend non, elementum quis mauris. Quisque eget turpis ligula. Donec at dolor pellentesque, tincidunt velit id, aliquam sem.</p>
+                                <h3>Hi, I'm Cody</h3>
                                 <br/>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut dui non est imperdiet maximus. Curabitur erat ligula, dictum sit amet rutrum eget, bibendum id nulla. Nulla fermentum lectus nec purus suscipit tincidunt sit amet nec nisi. Nulla porta vehicula sollicitudin. Nam quis tempus libero. Duis metus ipsum, congue fringilla eleifend non, elementum quis mauris. Quisque eget turpis ligula. Donec at dolor pellentesque, tincidunt velit id, aliquam sem.</p>
+                                <p>I got my first taste of programming at the age of 14 by creating automation
+                                programs for my favorite MMORPG of that time. To be able to write code and produce something both useful for myself
+                                and for others was an incredible feeling.</p>
+                                <br/>
+                                <p>Once I got a taste of what programming had to offer I was hooked. I began creating
+                                little programs to automate many tasks that I found myself repeating thorughout the day.
+                                Things like programmable autoclickers that tracked positions, color changes, and reacted differently
+                                depending on certain circumstances or programs to map application launches, events and so much more to the push of a button.
+                                The feeling was incredible.</p>
+                                <br/>
+                                <p>A couple of years later I found myself playing around with web development languages and creating small websites.
+                                It wasn't until the end of 2019, however, that I started getting serious about it as a career.</p>
+                                <br/>
+                                <p>I joined Lambda School's course for Full Stack Development and realized just how much there
+                                is to learn on both the Front End and the Back End side of things, and I can't get enough.
+                                To be able to learn whilst also creating is a dream come true.</p>
                             </div>
                         </div>
                     </div>

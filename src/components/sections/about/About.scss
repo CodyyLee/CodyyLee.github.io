@@ -1,10 +1,11 @@
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     min-height: 90vh;
     max-height: 90vh;
     background-color: black;
+    overflow: hidden;
 
     .content-container {
         display: flex;
@@ -13,9 +14,7 @@
         flex-direction: column;
         border: 1px solid #00ffff;
         border-radius: 5px;
-        width: 1px;
         opacity: 0;
-        margin-left: 10%;
         animation: scaleIn 1s forwards;
 
         @keyframes scaleIn {
@@ -122,15 +121,31 @@
 
                     .stats {
                         width: 50%;
-                        margin-top: -10%;
+                        margin-top: -3%;
+                        text-align: center;
 
                         p {
                             color: white;
                             font-size: 1.2rem;
+                        }
 
-                            span {
+                        .skills {
+                            width: 80%;
+                            margin-left: 8%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-wrap: wrap;
+
+                            svg {
                                 color: #00ffff;
-                                font-size: 1.4rem;
+                                font-size: 3rem;
+
+                                @media screen and (min-width: 767px) {
+                                    font-size: 5rem;
+                                    padding: 1%;
+                                    margin: .5%;
+                                }
                             }
                         }
                     }
@@ -144,18 +159,27 @@
                     justify-content: center;
 
                     .text-container {
-                        width: 80%;
+                        width: 90%;
                         padding: 4%;
                         background-color: rgb(12, 12, 12);
                         border-radius: 5px;
                         max-height: 35vh;
                         overflow-y: scroll;
 
+                        h3 {
+                            color: #00ffff;
+                            text-align: center;
+                            font-size: 2rem;
+                            margin: 0;
+                            padding: 0;
+                        }
+
                         p {
                             color: white;
                             font-size: 1.8rem;
                             margin: 0;
                             text-justify: inter-word;
+                            text-align: justify;
                         }
                     }
                 }
@@ -199,11 +223,6 @@
                             p {
                                 color: white;
                                 font-size: 2.8rem;
-    
-                                span {
-                                    color: #00ffff;
-                                    font-size: 3.2rem;
-                                }
                             }
                         }
                     }
@@ -220,7 +239,7 @@
                             padding: 4%;
                             background-color: rgb(12, 12, 12);
                             border-radius: 5px;
-                            max-height: 35vh;
+                            max-height: 30vh;
                             overflow-y: scroll;
     
                             p {
@@ -239,15 +258,12 @@
 
 @media (min-width: 1365px) {
     .about-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         min-height: 100vh;
         max-height: 100vh;
         background-color: black;
     
         .content-container {
-            margin-left: 14%;
+            
     
             @keyframes scaleIn {
                 from {
@@ -264,8 +280,8 @@
             .content {
     
                 .title {
-                    width: 70%;
-                    margin-left: 1.2%;
+                    width: 90%;
+                    margin-left: 1.1%;
                 }
     
                 .content-desc {
@@ -297,12 +313,8 @@
     
                             p {
                                 color: white;
-                                font-size: 1.8rem;
-    
-                                span {
-                                    color: #00ffff;
-                                    font-size: 2.5rem;
-                                }
+                                font-size: 2.3rem;
+                                margin: 13% 0 0 0;
                             }
                         }
                     }
@@ -319,9 +331,113 @@
                             align-items: center;
                             justify-content: center;
                             flex-direction: column;
+
+                            h3 {
+                                font-size: 3rem;
+                                margin-top: 5%;
+                            }
     
                             p {
-                                font-size: 2rem;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1919px) {
+    .about-container {
+        .content-container {
+            width: 70%;
+            animation: scaleIn2 .7s forwards;
+
+            @keyframes scaleIn2 {
+                from {
+                    opacity: 0;
+                    width: 1px;
+                }
+    
+                to {
+                    opacity: 1;
+                    width: 70%;
+                }
+            }
+
+            .content {
+
+                .content-desc {
+                    
+                    .photo {
+                        .photo-container {
+                            img {
+                                width: 80%;
+                                margin-left: 10%;
+                            }
+                        }
+        
+                        .stats {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2559px) {
+    .about-container {
+    
+        .content-container {
+    
+            .content {
+    
+                .title {
+                    margin-left: 1.09%;
+                }
+    
+                .content-desc {
+    
+                    .photo {
+
+                        .photo-container {
+                            
+                            img {
+                                width: 90%;
+                                margin-left: 5%;
+                            }
+                        }
+    
+                        .stats {
+                            width: 100%;
+                            padding: 0;
+    
+                            p {
+                                font-size: 3.3rem;
+                            }
+
+                            .skills {
+                                
+                                svg {
+                                    font-size: 8rem;
+                                }
+                            }
+                        }
+                    }
+    
+                    .text {
+    
+                        .text-container {
+
+                            h3 {
+                                font-size: 5rem;
+                            }
+    
+                            p {
+                                font-size: 2.6rem;
                             }
                         }
                     }

@@ -70,70 +70,62 @@
             }
         }
 
-        .pr-title {
-            color: #00ffff;
-            text-align: center;
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            img {
-                max-height: 80%;
-
-                @keyframes slideNext {
-                    from {
-                        min-width: 90%;
-                    }
-
-                    to {
-                        min-width: 1px;
-                        max-width: 1px;
-                    }
-                }
-
-                @keyframes slideNext2 {
-                    from {
-                        min-width: 1px;
-                        max-width: 1px;
-                    }
-
-                    to {
-                        min-width: 90%;
-                        max-width: 90%;
-                    }
-                }
-            }
-        }
-
         .pr-about {
             width: 95%;
             height: 80%;
             margin: 5% 2.5%;
-            animation: fadeInTitle 4s forwards;
             opacity: 0;
+            animation: newFade 1.5s forwards;
 
-            @keyframes fadeInTitle {
-                from {
-                    opacity: 0;
-                }
+            @keyframes newFade {
+                0% {opacity: 0}
 
-                to {
-                    opacity: 1;
-                }
+                50% {opacity: 0}
+
+                100% {opacity: 1}
             }
 
             .pr-title {
                 height: 90%;
+                color: #00ffff;
+                text-align: center;
+
+                h2 {
+                    font-size: 2rem;
+                }
 
                 img {
                     min-width: 90%;
                     min-height: 80%;
                     border: 1px solid #00ffff;
                     border-radius: 5px;
+                    max-height: 80%;
 
                     &:hover {
                         border: 2px solid #00ffff;
+                    }
+
+                    @keyframes slideNext {
+                        from {
+                            min-width: 90%;
+                        }
+
+                        to {
+                            min-width: 1px;
+                            max-width: 1px;
+                        }
+                    }
+
+                    @keyframes slideNext2 {
+                        from {
+                            min-width: 1px;
+                            max-width: 1px;
+                        }
+
+                        to {
+                            min-width: 90%;
+                            max-width: 90%;
+                        }
                     }
                 }
             }
@@ -163,28 +155,12 @@
 
 @media (min-width: 767px) {
     .pr-container {
-        .pr-content {
-            max-width: 65%;
-            max-height: 70%;
-        }
-
-        .buttons {
-            
-            button {
-                font-size: 1.8rem;
-            }
-        }
-    }
-}
-
-@media (min-width: 767px) {
-    .pr-container {
         height: 100%;
         width: 100%;
 
         .pr-content {
-            max-width: 65%;
-            max-height: 70%;
+            max-width: 80%;
+            max-height: 80vh;
 
             .title {
                 margin-left: 0;
@@ -195,8 +171,8 @@
                 flex-wrap: wrap;
 
                 .pr-title {
-                    width: 45%;
-                    margin: 0;
+                    width: 90%;
+                    margin: 0 auto;
                 }
 
                 .pr-desc {
@@ -218,6 +194,90 @@
             
             button {
                 font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1365px) {
+    .pr-container {
+        height: 100%;
+        width: 100%;
+
+        .pr-content {
+            max-width: 65%;
+            max-height: 70%;
+
+            .title {
+                margin-left: 0;
+            }
+
+            .pr-about {
+                display: flex;
+                flex-wrap: wrap;
+
+                @keyframes projectTransOut {
+                    from {
+                        opacity: 1
+                    }
+
+                    to {
+                        opacity: 0
+                    }
+                }
+
+                @keyframes projectTransIn {
+                    from {
+                        opacity: 0
+                    }
+
+                    to {
+                        opacity: 1
+                    }
+                }
+
+                .pr-title {
+                    width: 45%;
+                    margin: 0 auto;
+                }
+
+                .pr-desc {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 40%;
+                    margin-left: 5%;
+                    text-align: justify;
+                    font-size: 1.3rem;
+
+                    a {
+                        color: #00ffff;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            width: 50%;
+            margin: 0 auto;
+            
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1534px) {
+    .pr-container {
+        .pr-content {
+            .pr-about {
+                .pr-desc {
+                    font-size: 2rem;
+                }
             }
         }
     }
